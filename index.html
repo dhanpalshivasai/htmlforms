@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            margin: 25px 0px 0px 0px;
+            color: red;
+            font-style: oblique;
+        }
+        h2{
+            color: green;
+            font-style: italic;
+        }
+        h3{
+            color: blue;
+        }
+        label{
+            color:rgb(10, 70, 2)
+        }
+    </style>
+</head>
+<body>
+    <marquee scrollamount="10" direction="right"><center><h1>Please choose a course you want to join from MRU</h1></center></marquee>
+    <form action="SUBMIT.HTML" method="get">
+        <h2>Courses offered at MRU</h2>
+        <label for="FSWD">FullStack:</label>
+        <input id="FSWD" type="radio" name="loc" value="FULL STACK">
+
+        <label for="DS">DATA SCIENCE:</label>
+        <input id="DS" type="radio" name="loc" value="DATA SCIENCE">
+
+        <label for="DM">DIGITAL MARKETING:</label>
+        <input id="DM" type="radio" name="loc" value="DIGITAL MARKETING">
+        
+        <h3>Please provide the rating to the course</h3>
+        <select name="RATING">
+            <option value="GREAT">GREAT</option>
+            <option value="GOOD">GOOD</option>
+            <option value="AVERAGE">AVERAGE</option>
+            <option value="SATISFACTORY">SATISFACTORY</option>
+            <option value="POOR">POOR</option>
+        </select>
+
+        <H3>Any other feedback</H3>
+
+        <textarea name="YOUR FEDBACK"  cols="100" rows="10"></textarea>
+        <br>
+
+        <input type="submit" name="" value="SUBMIT" onclick="sp()">
+        <script>
+            function sp(){
+                alert("Thank you for registering to full stack web dev course@MRU")
+            }
+        </script>
+    </form>
+    
+</body>
+</html>
